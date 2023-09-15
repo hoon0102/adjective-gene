@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "uqn7iix",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>adjective gene</title>
+  </head>
+  <body class="scroll">
+    <nav class="awing">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./Assets/Logo.png" />
+          <div class="showTitle">
+            <div>Seoultech ID<br />41st Grad. Show</div>
+          </div>
+        </a>
+      </div>
+      <div class="category logo">
+        <ul>
+          <li>
+            <a href="About.html">About</a>
+          </li>
+          <li>
+            <a href="Project.html">Project</a>
+          </li>
+          <li>
+            <a href="Designer.html">Designer</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-cons">
+        <div class="insta inline">
+          <a href="https://www.instagram.com/">
+            <img src="./Assets/Insta.png" />
+          </a>
+        </div>
+        <a href="https://www.seoultech.ac.kr/">
+          <img class="des-icon" src="./Assets/Web.png" />
+        </a>
+      </div>
+    </nav>
+    <section class="About">
+      <img class="detail-img" src="./assets/Detail-Main.png" />
+      <div class="detail-descr">
+        <div class="detail-descrSlot">
+          <div class="detail-aboveSlot">
+            <div class="above-title">
+              졸업 작품 제목 졸업 작품 제목 졸업 작품 제목
+            </div>
+            <div class="above-sub">정신구조를 시각화한 가상공간</div>
+          </div>
+          <div class="detail-belowSlot">
+            <div class="below-name">이가영</div>
+            <div class="below-descr">
+              ‘프시케(PSYCHE)’는 스위스 정신의학자 칼 융의 ‘분석 심리학’ 이론을
+              토대로 실체가 없는 인간의 정신 구조를 시각화 한 가상공간이다. 이
+              가상공간에서 사용자들은 자신을 더욱 깊게 이해할 기회를 얻는다.
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="detail-img" src="./assets/Detail-Contents.png" />
+      <div class="detail-student">
+        <div class="detail-studentSlot">
+          <div>
+            <img class="studentImg" src="./assets/desThumb3.png" />
+          </div>
+          <div class="student">
+            <div class="stu-Above">
+              <div class="stu-nameSlot">
+                <div class="stu-name">
+                  <div class="stu-nameKr">이가영</div>
+                  <div class="stu-nameEn">Gayeong Lee</div>
+                </div>
+                <div class="designer-adj">실용적인 ㅣ 편리한 ㅣ 직관적인</div>
+              </div>
+              <div class="line"></div>
+              <div class="stu-descr">
+                <div class="stu-descrContent">
+                  색다른 시각으로 생활에 개선을 가져오기 위해 대상의 본질을
+                  파악하고, 그것이 독창성을 거쳐 나올 수 있도록 열린 생각과
+                  즐거운 마음으로 행동합니다. 제품디자이너이지만 세상의 복합적인
+                  면을 개선하는 디자인을 합니다.
+                </div>
+                <div class="stu-descrContent">
+                  Identify the nature of the object in order to bring
+                  improvement to life with a different perspective, Act with
+                  open thoughts and joy so that it can come through originality.
+                  I'm a product designer, but I design to improve the complexity
+                  of the world.
+                </div>
+              </div>
+            </div>
+            <div class="stu-contact">
+              <div class="contactSlot">
+                <img src="/assets/Insta-black.png" />seeya.sea
+              </div>
+              |
+              <div class="contactSlot">
+                <img src="/assets/Mail-black.png" />seeyasea52@gmail.com
+              </div>
+              |
+              <div class="contactSlot">
+                <img src="/assets/Web-black.png" />be.net/behance/seeyasea
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
