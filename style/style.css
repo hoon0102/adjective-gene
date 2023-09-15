@@ -192,7 +192,7 @@ nav ul li div {
 }
 
 .About {
-  width: 1660px;
+  width: calc(100vw - 260px);
   left: 260px;
 }
 .center {
@@ -248,13 +248,12 @@ nav ul li div {
 
 .track {
   object-fit: cover;
-  width: 160px;
-  height: 160px;
+  width: 10vw;
   margin-bottom: 40px;
 }
 .help {
   display: flex;
-  width: 1920px;
+  width: calc(100%-400px);
   padding: 200px 150px;
   align-items: flex-start;
   gap: 80px;
@@ -299,7 +298,7 @@ nav ul li div {
   width: 158px;
   color: #8f8f8f;
   font-family: "sandoll-gothicneo1", sans-serif;
-  font-size: 16px;
+  font-size: min(0.8vw, 16px);
   font-style: normal;
   font-weight: 400;
   line-height: 48px; /* 300% */
@@ -307,11 +306,12 @@ nav ul li div {
 .comit-list {
   display: flex;
   align-items: flex-start;
-  gap: 48px;
+  justify-content: space-between;
+  width: calc(100vw - 660px);
 }
 .comit-col5 {
   display: flex;
-  width: 234px;
+  width: auto;
   align-items: flex-start;
   gap: 20px;
 }
@@ -319,7 +319,7 @@ nav ul li div {
   color: #8f8f8f;
   text-align: right;
   font-family: "sandoll-gothicneo1", sans-serif;
-  font-size: 16px;
+  font-size: min(0.8vw, 16px);
   font-style: normal;
   font-weight: 400;
   line-height: 48px; /* 300% */
@@ -344,13 +344,16 @@ nav ul li div {
 }
 .space {
   background: #000;
-  width: 1660px;
-  height: 966px;
+  width: calc(100vw - 260px);
+  height: auto;
   flex-shrink: 0;
+}
+.space-img {
+  width: calc(100vw - 260px);
 }
 .space-descr {
   display: flex;
-  width: 1660px;
+  width: calc(100vw - 260px);
   padding: 60px 150px;
   align-items: flex-start;
   gap: 10px;
@@ -381,18 +384,20 @@ nav ul li div {
   line-height: 160%; /* 28.8px */
 }
 .project {
-  width: 100vw;
+  width: calc(100vw - 360px);
   display: flex;
   padding: 100px 50px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 0.78vw;
 }
 .project-row {
   display: flex;
-  width: 100%;
   align-items: flex-start;
-  gap: 20px;
+  gap: 0.78vw;
+}
+.project-img {
+  width: calc(33vw - 130px);
 }
 .thumbnail {
   position: relative;
@@ -401,12 +406,12 @@ nav ul li div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 108px;
+  justify-content: space-between;
 }
 .thumb-title {
   color: #fff;
   font-family: "LineSeedKR-Bd", sans-serif;
-  font-size: 34px;
+  font-size: min(1.6vw, 34px);
   font-style: normal;
   font-weight: 700;
   line-height: 140%; /* 47.6px */
@@ -415,15 +420,22 @@ nav ul li div {
   color: #fff;
   text-align: right;
   font-family: "LineSeedKR-Rg", sans-serif;
-  font-size: 22px;
+  font-size: min(1.2vw, 22px);
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 30.8px */
 }
+.thumb-below {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-end;
+}
 .overlay {
   display: inline-flex;
-  padding: 40px;
-  align-items: flex-end;
+  padding: 20px;
+  align-items: stretch;
   gap: auto;
   position: absolute;
   top: 0;
@@ -444,11 +456,11 @@ nav ul li div {
   padding: 100px 50px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 60px;
+  gap: 3vw;
 }
 .designer-row {
   display: flex;
-  width: 1560px;
+  width: calc(100vw - 18.75vw);
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -457,7 +469,7 @@ nav ul li div {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 1.5vw;
 }
 .des-overlay {
   display: flex;
@@ -488,7 +500,7 @@ nav ul li div {
 .des-thumb-title {
   color: #fff;
   font-family: "LineSeedKR-Bd", sans-serif;
-  font-size: 30px;
+  font-size: min(1.6vw, 32px);
   font-style: normal;
   font-weight: 700;
   line-height: 140%; /* 47.6px */
@@ -496,56 +508,223 @@ nav ul li div {
 .des-thumb-track {
   color: #fff;
   font-family: "LineSeedKR-Rg", sans-serif;
-  font-size: 22px;
+  font-size: min(1vw, 20px);
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 30.8px */
 }
+.des-img {
+  width: calc(19vw);
+}
 .designer-descr {
+  width: calc(19vw);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
+  gap: 0.2vw;
 }
 .designer-nameSlot {
   display: flex;
+  width: 100%;
   align-items: center;
-  gap: 40px;
+  justify-content: space-between;
 }
 .designer-adj {
   color: #a0a0a0;
   font-family: "sandoll-gothicneo1", sans-serif;
-  font-size: 16px;
+  font-size: min(1vw, 20px);
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 22.929px */
+  line-height: 140%;
 }
 .designer-name {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.5vw;
 }
 .name-kr {
   color: #000;
   font-family: "LineSeedKR-Rg", sans-serif;
-  font-size: 32px;
+  font-size: min(1.6vw, 32px);
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 44.8px */
+  line-height: 140%;
+  word-break: break-all;
 }
 .name-en {
   color: #5a5757;
   font-family: "LineSeedKR-Rg", sans-serif;
-  font-size: 20px;
+  font-size: min(0.8vw, 16px);
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 28px */
+  line-height: 140%;
+  word-break: break-all;
+}
+.des-icon {
+  width: 1vw;
+}
+.des-arrow {
+  width: 3vw;
+}
+.detail-img {
+  width: calc(100vw - 260px);
+}
+.detail-descr {
+  display: inline-flex;
+  padding: 2.083vw 4.166vw 3.385vw 4.166vw;
+  justify-content: center;
+  align-items: center;
+}
+.detail-descrSlot {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.detail-aboveSlot {
+  display: flex;
+  width: calc(100vw - 420px);
+  justify-content: space-between;
+  align-items: center;
+}
+.detail-belowSlot {
+  display: flex;
+  width: calc(100vw - 420px);
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.above-title {
+  width: 36.458vw;
+  color: #000;
+  font-family: "sandoll-gothicneo1", sans-serif;
+  font-size: min(3.2vw, 64px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80px; /* 125% */
+}
+.above-sub {
+  width: 40.625vw;
+  flex-shrink: 0;
+  color: #494949;
+  font-family: "sandoll-gothicneo1", sans-serif;
+  font-size: min(1.2vw, 24px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 38.4px */
+}
+.below-name {
+  width: 36.458vw;
+  color: #a0a0a0;
+  font-family: "sandoll-gothicneo1", sans-serif;
+  font-size: min(0.8vw, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+.below-descr {
+  width: 40.625vw;
+  flex-shrink: 0;
+  color: #404040;
+  font-family: "sandoll-gothicneo1", sans-serif;
+  font-size: min(0.8vw, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.detail-student {
+  border-top: 1px solid #000;
+  display: flex;
+  width: 100%;
+  padding: 5.208vw 6.25vw;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.detail-studentSlot {
+  display: flex;
+  width: auto;
+  align-items: flex-start;
+  gap: 3.23vw;
+}
+.studentImg {
+  width: 14.84375vw;
+  align-self: stretch;
+}
+.student {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.04vw;
+}
+.stu-Above {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.666vw;
+}
+.stu-nameSlot {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.stu-name {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.833vw;
+}
+.stu-nameKr {
+  color: #000;
+  font-family: "LineSeedKR-Bd", sans-serif;
+  font-size: min(2vw, 40px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 40px */
+}
+.stu-nameEn {
+  color: #808080;
+  font-family: "LineSeedKR-Rg", sans-serif;
+  font-size: min(1vw, 20px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+}
+.line {
+  width: 100%;
+  height: 2px;
+  background: #d9d9d9;
+}
+.stu-descr {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4.166vw;
+}
+.stu-descrContent {
+  line-height: 160%;
+  text-align: justify;
+  width: 25.104vw;
+  height: 10.572vw;
+  flex-shrink: 0;
+}
+.stu-contact {
+  color: #000;
+  font-size: min(1.2vw, 24px);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.666vw;
+}
+.contactSlot {
+  display: flex;
+  align-items: center;
+  gap: 0.833vw;
 }
 #tracks {
   color: #b1b1b1;
-  font-size: 18px;
+  font-size: 20px;
 }
 #selected {
   color: #000;
-  font-size: 18px;
+  font-size: min(1vw, 20px);
 }
